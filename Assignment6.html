@@ -1,11 +1,288 @@
+
 <HTML>
-  <BODY style="background-color:lightpink;">
-    <font size="15pt" color="white">ASSIGNMENT 6
+
+<head>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.3.0/prototype.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js"></script>
 
 
-    </p>
-    <img width= "20%" src="venusetfleur6.jpg"/><style="background-color:blue;"/>
 
-    <p><a href="../index.html">Back</a> </p>
-  <body>
+
+  <style>
+  body{font-family: 'Oswald', sans-serif;}
+  body {
+  background-image: url("Images/Jamaica5.jpg");
+}
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  top: 60%
+  width:auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+
+/* Position the "next button" to the right */
+.next {
+  right:0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+a{text-decoration: none}
+a{color: hotpink;}
+  </style>
+
+
+  </head>
+  <body style="background-color:#cccccc;">
+    <font size="6" color="white">
+
+      <a href='#' onclick="new Effect.Scale(this.parentNode, 150); return false;"><center><h1>JAMAICA</a></h1></center>
+
+  <center>  <ul><h4>Activities in Jamaica:</h4></ul>
+    <li>Kayak</li>
+    <li>Try New Foods</li>
+    <li>Swim in the Ocean</li>
+    <li>Take pictures and videos</li>
+    <li>Explore the Area</li></center>
+
+  <center>  <p>Every since I was a young girl, I always wanted to travel to Jamiaca.  It has beautiful scenery and many different foods and fruits to try.  The activities are endless and I can take so many pictures and make a scrap book out of them!</p></center>
+
+
+    <center><div onclick="$(this).switchOff()">
+    Jamaica is where all your troubles...dissapear...(click me)
+  </div></center>
+
+
+
+    <center><div onclick="$(this).shake()">
+It is full of extravagant places!
+</div></center>
+
+
+<br>
+<center><div id="slidedown_demo" style="display:none; width:1000px; height:57px; background:black; text-align:center; font-size:25">
+  <div>
+  The country has more churches per square mile than any other country in the world.
+  </div>
+  </div>
+<a href="#" onclick="Effect.SlideDown('slidedown_demo'); return false;">Click here for a fact about Jamaica!</a></center>
+
+</br>
+
+
+
+<br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="Jamaica2.jpg" style="width:100%">
+  <div class="text">River Raft</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="jamaica3.jpg" style="width:100%">
+  <div class="text">Lunch on Beach</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="Jamaica4.jpg" style="width:100%">
+  <div class="text">Island House</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="Jamaica7.jpg" style="width:100%">
+  <div class="text">Blue Holes</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="Jamaica6.jpg" style="width:100%">
+  <div class="text">Rainbow</div>
+</div>
+</div>
+<center>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</center>
+
+
+
+</br>
+
+<script>
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace("active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dot[slideIndex-1].className += "active";
+
+}
+</script>
+
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+
+</div>
+
+
+<center><a href="#" onclick="Effect.ScrollTo('article_top'); return false;">BACK TO TOP</a></center>
+
+</body>
+
+
 </HTML>
